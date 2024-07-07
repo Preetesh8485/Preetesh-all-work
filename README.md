@@ -1,2 +1,2 @@
 # Preetesh-all-work
-my base Git rep
+my base Git repo
