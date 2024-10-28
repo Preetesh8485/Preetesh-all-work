@@ -1,0 +1,147 @@
+/* General reset and setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2be2bd;
+    margin-top: 60px; /* Adjust for the fixed navbar height */
+}
+
+/* Navigation styles */
+#navbar {
+    background-color: rgb(209, 17, 17);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+#navbar a:hover {
+    background-color: #555;
+}
+
+/* Welcome section styles */
+#welcome-section {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#welcome-section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects section styles */
+#projects {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-tile {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+}
+
+.project-tile h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.project-tile p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project-tile a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-tile a:hover {
+    background-color: #555;
+}
+
+/* Profile link styles */
+#profile-link {
+    display: block;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    #projects {
+        padding: 2rem;
+    }
+
+    .project-tile {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-tile {
+        width: 100%;
+    }
+}
